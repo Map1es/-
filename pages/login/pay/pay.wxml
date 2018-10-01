@@ -1,0 +1,18 @@
+<view class='item' wx:for="{{list}}" wx:key="{{index}}">
+  <view class='top'>
+    <text class='tilte'>{{item.orders.order_time}}</text>
+    <!-- <image src='../../../images/login/del.png'></image> -->
+  </view>
+  <view class='content'>
+    <scroll-view scroll-x="true" scroll-with-animation="true">
+        <image wx:for="{{item.orderdtlinfos}}" src='{{item.goods.img}}' wx:key="index"></image>
+    </scroll-view>
+    <view class='sum'>
+      <text class='sum-count'>￥{{item.orders.total_price}}</text>
+      <text class='sum-tilte'>共{{item.orderdtlinfos.length}}件商品 已付款：</text>
+    </view>
+  </view>
+  <view class='bottom' bindtap='tapDel' data-id="{{item.orders.id}}">
+    <view>删除订单</view>
+  </view>
+</view>

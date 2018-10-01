@@ -1,0 +1,142 @@
+page {
+  background: #f1f1f1;
+}
+
+.item {
+  height: 200rpx;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 20rpx;
+  float: left;
+}
+.shop{
+  padding-bottom: 80rpx;
+  width: 100%;
+  float: left;
+}
+.item image {
+  width: 140rpx;
+  height: 140rpx;
+  margin-top: 20rpx;
+  float: left;
+}
+
+.item .choose {
+  height: 200rpx;
+  float: left;
+}
+
+.item .choose image {
+  margin-top: 75rpx;
+}
+
+.item-more {
+  float: left;
+  margin: 30rpx;
+  width: 30%;
+}
+
+.item-more text.name {
+  display: block;
+  font: 600 38rpx/38rpx "微软雅黑";
+  color: gray;
+}
+
+.item-more text.des {
+  display: block;
+  font: 300 24rpx/24rpx "微软雅黑";
+  width: 100%;
+  color: gray;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 30rpx;
+}
+
+.item-count {
+  float: right;
+  width: 20%;
+  margin-top: 75rpx;
+  margin-right: 30rpx;
+  color: #e4393c;
+}
+
+.item-input input {
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+  float: left;
+}
+
+.item-input {
+  width: 150rpx;
+  height: 30rpx;
+  font: 300 26rpx/35rpx "sisun";
+  color: black;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.item-input text {
+  float: left;
+  display: block;
+  width: 35rpx;
+  height: 35rpx;
+  position: relative;
+  margin: 10rpx 5rpx;
+  background: #f1f1f1;
+}
+
+/* bottom */
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  height: 100rpx;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 5rpx 0 10rpx #c9c9c9;
+}
+
+.bottom .choose {
+  float: left;
+  text-align: center;
+}
+
+.choose image {
+  display: block;
+  width: 50rpx;
+  height: 50rpx;
+  margin: 25rpx;
+}
+
+.bottom .more {
+  float: left;
+  margin-left: 5rpx;
+  font: 500 30rpx/70rpx "微软雅黑";
+}
+
+.bottom .count {
+  font: 300 30rpx/50rpx "微软雅黑";
+}
+
+.bottom .money {
+  color: #e4393c;
+}
+
+.bottom .tishi {
+  font: 300 22rpx/10rpx "微软雅黑";
+  color: gray;
+  display: block;
+}
+
+.bottom .sumbit {
+  float: right;
+  height: 100%;
+  text-align: center;
+  width: 40%;
+  font: 600 38rpx/100rpx "微软雅黑";
+  color: #fff;
+  background: #31c971;
+}

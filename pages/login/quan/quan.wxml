@@ -1,0 +1,25 @@
+<view class='pic'>
+  <image src='/images/quan/99.gif' mode='widthFix'></image>
+</view>
+<view class='whole'>
+  <scroll-view scroll-y>
+    <view class='kuang' wx:for="{{items}}" wx:key="{{index}}">
+      <view class='kuang-l'>
+        <image src='/images/quan/quan.png'></image>
+      </view>
+      <view class='kuang-m'>
+        <view class='kuang-m-top'>
+          <text>{{item.title}}</text>
+        </view>
+        <view class='kuang-m-bottom'>
+          <text class='fuhao'>￥</text>
+          <text class='jine'>{{item.price}}</text>
+          <text class='man'>满888可用</text>
+        </view>
+      </view>
+      <view class='kuang-r'>
+        <image src='/images/quan/q.png' class="{{item.status===1?'':'.gray'}}" bindtap='click' data-index="{{index}}"></image>
+      </view> 
+    </view>
+  </scroll-view>
+</view>

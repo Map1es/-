@@ -1,0 +1,106 @@
+scroll-view{
+  width: 100%;
+  height: 80rpx;
+  white-space: nowrap;
+}
+scroll-view text{
+  margin: 40rpx 30rpx;
+  font: 300 34rpx/80rpx "微软雅黑";
+  color: #666;
+}
+text.item-active{
+  color: #31c971;
+}
+.tab-bar {
+  position: relative;
+  white-space: nowrap;
+  display: block;
+  font-size: 9pt;
+  letter-spacing: 2rpx;
+  color: #666;
+  height: 35px;
+  background: #fff;
+}
+
+.tab-bar .tab {
+  display: inline-block;
+  line-height: 35px;
+  text-align: center;
+}
+
+.tab-bar .tab-active {
+  color: #31c971;
+}
+
+.tab-bar .under-line {
+  position: absolute;
+  height: 1px;
+  top: 29px;
+  background-color: #31c971;
+}
+.mid-pic image{
+  width: 100%;
+}
+.hot-rank {
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+  color: #666;
+  height: 40rpx;
+  letter-spacing: 2rpx;
+  margin-top: 20rpx;
+}
+
+.hot-rank .hot {
+  float: left;
+  margin-left: 15rpx;
+  margin-top: 5rpx;
+  font-weight: 700;
+  border-left: 2px solid #31c971;
+  padding-left: 5px;
+}
+
+.hot-rank .rank {
+  float: right;
+  margin-right: 10rpx;
+}
+
+.hot-rank .rank:active {
+  color: #31c971;
+}
+
+.main {
+  width: 100%;
+  font-family: "微软雅黑";
+  font-size: 9pt;
+  float: left;
+  margin-top: 20rpx;   
+}
+
+.main-content {
+  width: 30%;
+  text-align: center;
+  float: left;
+  height: 230rpx;
+  margin: 12rpx;
+}
+
+.main-content image {
+  display: block;
+  width: 100%;
+  height: 80%;
+  
+}
+
+.main-content text {
+  display: block;
+  color: #666;
+  letter-spacing: 6rpx;
+  font:600 32rpx/32rpx "微软雅黑"
+}
+swiper {
+  width: 100%;
+}
+swiper image {
+  height: 100%;
+  width: 100%;
+}

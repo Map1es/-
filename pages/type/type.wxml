@@ -1,0 +1,21 @@
+<scroll-view scroll-x="true" scroll-with-animation="true"  bindtap="tabTap">
+  <text class="{{item.type==currentType?'text.item-active':''}}" data-type="{{item.type}}" wx:for="{{type_title}}" wx:key="{{key}}">{{item.name}}</text>
+</scroll-view>
+
+<swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+  <swiper-item wx:for="{{movies}}" wx:key="{{index}}">
+    <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+  </swiper-item>
+</swiper>
+
+<view class='hot-rank'>
+  <text class='hot'>热门推荐</text>
+  <text class='rank'>排行榜 ></text>
+</view>
+
+<view class='main'>
+  <view class='main-content' wx:for="{{foods}}" wx:key="{{index}}" bindtap='tapItem' data-item='{{item}}'>
+    <image src="{{item.img}}"></image>
+    <text>{{item.name}}</text>
+  </view>
+</view>

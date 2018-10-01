@@ -1,0 +1,72 @@
+<view class='head'>
+  <text>商品</text>
+  <text>评价</text>
+  <text>详情</text>
+  <text>推荐</text>
+</view>
+<view class='body' wx:for="{{introduce_content}}" wx:key="{{index}}">
+  <view class='head-pic'>
+    <image src='{{items.img}}' mode='widthFix'></image>
+  </view>
+  <view class='main'>
+    <view class='title'>
+      <text class='name'>{{items.name}}</text>
+      <text class='introduce'>{{items.description}}</text>
+      <view class='price-score'>
+        <text class='score' wx:for="{{items.score}}" wx:key="{{index}}">★</text>
+        <text class='price'>￥ {{items.price}}</text>
+        <view class="yunfei-xiaoliang-dizhi" wx:for="{{item.k_x_d}}" wx:key="{{index}}">
+          <text class='yunfei'>快递: {{item.kuaidi}}</text>
+          <text class='xiaoliang'>月销: {{item.xiaoliang}}</text>
+          <text class='dizhi'>{{item.dizhi}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='jieshao'>
+      <view class='chandi' wx:for="{{item.chandi}}" wx:key="{{index}}">
+        <text class='birth'>产地 ： {{item.content}}</text>
+        <text class='nutrition'>营养成分 ： {{item.func}}</text>
+      </view>
+    </view>
+    <view class='tuijian'>
+      <view class='tuijian-title'>
+        <text>推荐搭配</text>
+      </view>
+      <swiper display-multiple-items="2">
+        <swiper-item wx:for="{{item.tuijian}}" wx:key="{{index}}">
+          <image src='{{item.img}}'></image>
+          <text>{{item.name}}</text>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class='specific'>
+      <view class='s-title'>
+        <text class='yes-title'>适合搭配的食物</text>
+        <text class='no-title'>不适合搭配的食物</text>
+      </view>
+      <view class='s-content'>
+        <view class='s-content-left'>
+          <text class='yes-content' wx:for="{{item.yes_content}}" wx:key="{{index}}">{{item.content}}</text>
+        </view>
+        <view class='s-content-right'>
+          <text class='no-content' wx:for="{{item.no_content}}" wx:key="{{index}}">{{item.content}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='bottom'>
+  <view class='img'>
+    <image src='../../images/item/kefu.png'></image>
+    <text>客服</text>
+  </view>
+  <view class='img'>
+    <image src='../../images/item/collection.png'></image>
+    <text>收藏</text>
+  </view>
+  <view class='img' >
+    <image src='../../images/item/shopping.png'></image>
+    <text>购物车</text>
+  </view>
+  <view class='sumbit' bindtap='tapShop' data-id='{{items.id}}'>加入购物车</view>
+</view>

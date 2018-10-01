@@ -1,0 +1,61 @@
+<view class='top clearfix'>
+  <image src='../../images/login/people_fill.png'></image>
+  <view class='name-more'>
+    <text class='name'>{{user.name}}</text>
+    <text class='more'>身高172cm 体重80kg</text>
+  </view>
+  <view class='yingyang' bindtap='tapYy'>营养指标 ></view>
+  
+</view>
+
+<view class='money'>
+  <view class='money-item'>
+    <text class='name'>{{user.money}}元</text>
+    <text class='num'>余额</text>
+  </view>
+   <view class='money-item' bindtap='tapQuan'>
+    <text class='name'>2个</text>
+    <text class='num'>红包</text>
+  </view>
+   <view class='money-item'>
+    <text class='name'>3000分</text>
+    <text class='num'>积分</text>
+  </view>
+</view>
+
+<view class='order'>
+  <view class='order-item' wx:for="{{order}}" wx:key="{{index}}" bindtap='tapFn' data-link="{{item.link}}">
+    <image src='{{item.url}}'></image>
+    <text>{{item.name}}</text>
+  </view>
+</view>
+
+<view class='tags'>
+  <text class='tags-title'>健康标签</text>
+  <view class="section">
+    <picker bindchange="bindPickerChange" value="{{tags}}" range="{{tags}}">
+      <view class="picker">
+        <image src='../../images/login/addition_fill.png'></image>
+        <text>添加</text>
+      </view>
+    </picker>
+  </view>
+  <view class='line'></view>
+  <view class='tags-content'>
+    <text wx:for="{{tags}}" wx:key="{{index}}">{{item}}</text>
+  </view>
+</view>
+
+<view class='tags'>
+  <text class='tags-title'>收货地址</text>
+  <view class="picker" bindtap='tapAdd'>
+    <image src='../../images/login/addition_fill.png'></image>
+    <text>管理地址</text>
+  </view>
+  <view class='line'></view>
+  <view class='content' wx:for="{{1}}" wx:key="{{index}}">
+    <text class='name'>马老板</text>
+    <text class='tel'>134********</text>
+    <text class='address'>浙江省杭州市阿里巴巴总公司</text>
+  </view>
+</view>

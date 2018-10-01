@@ -1,0 +1,266 @@
+page {
+  letter-spacing: 2rpx;
+  background: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.head {
+  text-align: center;
+  height: 80rpx;
+  font: 400 26rpx/80rpx "微软雅黑";
+  color: #666;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 0 5rpx 16rpx #c9c9c9;
+  box-sizing: border-box;
+}
+
+.head text {
+  margin: 0 20rpx;
+}
+
+.head text:active{
+  color: #31c971;
+}
+
+.head-pic image {
+  margin-top: 50rpx;
+  width: 100%;
+}
+
+.head-pic {
+  width: 100%;
+}
+
+.body {
+  margin-bottom: 100rpx;
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+}
+
+.title {
+  background: #fff;
+}
+
+.specific {
+  background: #fff;
+  width: 100%;
+}
+
+.title {
+  margin-top: 15rpx;
+  padding: 20rpx;
+}
+
+.title text.name {
+  margin-top: 10rpx;
+  font: 400 36rpx/36rpx "微软雅黑";
+  color: #353535;
+  display: block;
+}
+
+.title .introduce {
+  font: 300 28rpx/28rpx "微软雅黑";
+  color: #797979;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  margin-top: 18rpx;
+}
+
+.price-score .price {
+  font: 700 48rpx/70rpx "微软雅黑";
+  color: #e4393c;
+  margin-top: 20rpx;
+  display: block;
+}
+
+.price-score .score {
+  float: right;
+  font: 300 30rpx/30rpx "微软雅黑";
+  color: #31c971;
+  margin-top: 20rpx;
+}
+
+.yunfei-xiaoliang-dizhi{
+  width: 100%;
+  height: 60rpx;
+}
+
+.yunfei-xiaoliang-dizhi text{
+  height: 40rpx;
+  font: 400 26rpx/40rpx "微软雅黑";
+  color: #797979;
+}
+
+.yunfei-xiaoliang-dizhi .dizhi{
+  padding-right: 20px;
+  padding-left: 150rpx;
+}
+
+.yunfei-xiaoliang-dizhi .xiaoliang{
+  padding-left: 140rpx;
+}
+
+.jieshao {
+  width: 100%;
+  line-height: 80rpx;
+  margin-top: 20rpx;
+}
+
+.chandi {
+  background: #fff;
+}
+
+.chandi .birth{
+ padding-top: 30rpx;
+}
+
+.chandi .nutrition{
+  padding-bottom: 30rpx;
+}
+
+.chandi text {
+  height: 40rpx;
+  font: 400 30rpx/40rpx "微软雅黑";
+  color: #797979;
+  margin-left: 20rpx;
+  padding: 5rpx 10rpx;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tuijian {
+  margin-top: 20rpx;
+  background: #fff;
+  height: 450rpx;
+  width: 100%;
+}
+
+
+.tuijian .tuijian-title text{
+  font: 500 34rpx/80rpx "微软雅黑";
+  color: #31c971;
+  border-left: 8rpx solid #31c971;
+  padding-left: 10rpx;
+}
+.tuijian swiper-item {
+  height: 100%;
+  text-align: center;
+}
+
+.tuijian image {
+  width: 100%;
+  height: 85%;
+}
+
+swiper {
+  width: 100%;
+  height: 360rpx;
+}
+
+swiper-item text {
+  font: 500 32rpx/32rpx "微软雅黑";
+  color: gray;
+}
+
+.specific {
+  margin-top: 30rpx;
+  font: 600 30rpx/30rpx "微软雅黑";
+}
+
+.specific .s-title {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  font: 600 34rpx/80rpx "微软雅黑";
+  color: #fff;
+}
+
+.specific .yes-title {
+  padding-left: 30rpx;
+  flex: 1;
+  background-color: #31c971;
+}
+
+.specific .no-title {
+  flex: 1;
+  padding-left: 30rpx;
+  background-color: #ff6262;
+}
+
+.specific .s-content {
+  display: flex;
+  width: 100%;
+  font: 400 30rpx/40rpx "微软雅黑";
+  color: #666;
+  background: #fff;
+}
+
+.s-content-left, .s-content-right {
+  flex: 1;
+}
+
+.s-content text {
+  padding: 10rpx 30rpx;
+  border-bottom: 1rpx solid #eaeaea;
+  display: block;
+  height: 40rpx;
+}
+
+.specific .s-content .yes-content {
+  border-right: 1rpx solid #eaeaea;
+}
+
+.bottom {
+  height: 100rpx;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  box-shadow: 5rpx 0 13rpx #c9c9c9;
+}
+
+.bottom .sumbit {
+  flex: 2;
+  height: 100%;
+  width: 40%;
+  float: right;
+  background: #31c971;
+  color: #fff;
+  font: 400 38rpx/100rpx "微软雅黑";
+  text-align: center;
+}
+
+.bottom .img {
+  width: 100rpx;
+  height: 100rpx;
+  flex: 1;
+  text-align: center;
+}
+
+.bottom .img image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 10rpx;
+}
+
+.bottom .img text {
+  font: 300 24rpx/24rpx "微软雅黑";
+  color: gray;
+  display: block;
+}

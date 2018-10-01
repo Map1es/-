@@ -1,0 +1,42 @@
+page {
+  background: #f1f1f1;
+  letter-spacing: 2rpx;
+}
+
+
+.bing {
+  margin-top: 30rpx;
+  background: #fff;
+  width: 100%;
+}
+
+.bing canvas {
+  margin: 0 auto;
+}
+
+.today {
+  border-bottom: 4rpx solid #f1f1f1;
+  height: 80rpx;
+}
+
+.today .today-title {
+  font: 500 34rpx/80rpx "微软雅黑";
+  color: #666;
+  width: 100%;
+  padding-left: 20rpx;
+  border-left: 8rpx solid #31c971;
+}
+
+.tips {
+  background: #fff;
+  text-indent: 1em;
+  margin-left: -8rpx;
+  text-align: justify;
+  padding: 10rpx 35rpx;
+  padding-bottom: 50rpx;
+}
+
+.tips .text {
+  font: 200 24rpx/1rpx "微软雅黑";
+  color: #454545;
+}

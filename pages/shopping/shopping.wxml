@@ -1,0 +1,32 @@
+<view class='shop'>
+  <view class='item' wx:for="{{shop.shoppintitem}}" wx:key="{{index}}">
+    <view class='choose'>
+      <image src='../../images/shopping/choose_fill.png'></image>
+    </view>
+    <image src='{{item.good.img}}'></image>
+    <view class='item-more'>
+      <text class='name'>{{item.good.name}}</text>
+      <text class='des'>{{item.good.description}}</text>
+      <view class='item-input'>
+        <text class='jian' bindtap='tapSub' data-num="{{item.shopping.goods_num}}" data-id="{{item.shopping.goods_id}}">-</text>
+        <input type='text' value='{{item.shopping.goods_num}}'></input>
+        <text class='jia' bindtap='tapAdd'  data-num="{{item.shopping.goods_num}}" data-id="{{item.shopping.goods_id}}">+</text>
+      </view>
+    </view>
+    <view class='item-count'>
+      <text class='num'>￥{{item.good.price}}</text>
+    </view>
+  </view>
+</view>
+
+<view class='bottom'>
+  <view class='choose'>
+    <image src='../../images/shopping/choose_fill.png'></image>
+  </view>
+  <view class='sumbit' bindtap='sumbit'>确认结算</view>
+  <view class='more'>
+    <text class='count'>商品总价：</text>
+    <text class='money'>￥{{shop.totalprice}}</text>
+    <text class='tishi'>确认结算后清空购物车</text>
+  </view>
+</view>

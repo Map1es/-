@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/pay/pay",
+    "pages/shopping/shopping",
+    "pages/login/quan/quan",
+    "pages/login/area/area",
+    "pages/index/search/search",
+    "pages/login/login",
+    "pages/type/type",
+    "pages/item/item",
+    "pages/login/address/address"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#31c971",
+    "navigationBarTitleText": "鲜多多",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a3a3a3",
+    "selectedColor": "#31c971",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/index.png",
+        "selectedIconPath": "images/icon/index_fill.png"
+      },
+      {
+        "pagePath": "pages/type/type",
+        "text": "分类",
+        "iconPath": "images/icon/type.png",
+        "selectedIconPath": "images/icon/type_fill.png"
+      },
+      {
+        "pagePath": "pages/shopping/shopping",
+        "text": "购物车",
+        "iconPath": "images/icon/shopping.png",
+        "selectedIconPath": "images/icon/shopping_fill.png"
+      },
+      {
+        "pagePath": "pages/login/login",
+        "text": "登录",
+        "iconPath": "images/icon/login.png",
+        "selectedIconPath": "images/icon/login_fill.png"
+      }
+    ]
+  }
+}

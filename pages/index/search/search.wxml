@@ -1,0 +1,11 @@
+<view class='top'>
+  <view class='search'>
+    <image src='../../../images/index/search.png'></image>
+    <input placeholder='搜索商品' placeholder-class="phcolor" bindinput='search'></input>
+  </view>
+</view>
+
+<view class="items" wx:for="{{sum}}" bindtap='tapItem' data-item='{{item}}' wx:key="{{index}}">
+    <text>{{item.name}}</text>
+    <text class='item-rank' wx:for="{{item.score}}" wx:key="{{index}}">★</text>
+</view>

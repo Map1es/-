@@ -1,0 +1,73 @@
+page {
+  background: #f1f1f1;
+}
+
+.item {
+  height: 420rpx;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 20rpx;
+  position: relative;
+}
+
+.top {
+  height: 30rpx;
+  font: 500 32rpx/32rpx "微软雅黑";
+  padding: 20rpx;
+  color: #31c971;
+}
+
+.top image {
+  float: right;
+  height: 40rpx;
+  width: 40rpx;
+  margin-top: -3rpx;
+}
+
+scroll-view {
+  background: #fbfbfb;
+  width: 100%;
+  height: 200rpx;
+  white-space: nowrap;
+}
+
+.content scroll-view  image {
+  height: 160rpx;
+  width: 160rpx;
+  margin: 20rpx;
+  background: gray;
+  display: inline-block;
+}
+
+.content .sum {
+  float: right;
+  height: 40rpx;
+  font: 500 28rpx/48rpx "微软雅黑";
+  padding: 12rpx 20rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+  width: 100%;
+}
+
+.sum text {
+  float: right;
+}
+
+.content .sum-count {
+  font: 500 32rpx/48rpx "微软雅黑";
+}
+
+.bottom {
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+}
+
+.bottom view {
+  height: 60rpx;
+  width: 180rpx;
+  background: #31c971;
+  color: white;
+  text-align: center;
+  border-radius: 60rpx;
+  font: 600 32rpx/60rpx "微软雅黑";
+}

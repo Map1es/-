@@ -1,0 +1,112 @@
+page {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2rpx;
+}
+
+.top {
+  font: 400 36rpx/40rpx "微软雅黑";
+  color: #666;
+  height: 80rpx;
+  width: 100%;
+  box-shadow: 0 5rpx 13rpx #c9c9c9;
+}
+
+.top image {
+  height: 36rpx;
+  width: 36rpx;
+  margin-top: 20rpx;
+}
+
+.top text {
+  margin-left: 260rpx;
+}
+
+.top .return {
+  margin-left: 15rpx;
+}
+
+.top .more {
+  float: right;
+  margin-right: 20rpx;
+}
+
+.pic image {
+  margin-top: 30rpx;
+  width: 100%;
+}
+
+page {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2rpx;
+}
+
+.whole {
+  width: 100%;
+}
+
+.kuang {
+  height: 220rpx;
+  margin: 20rpx;
+  box-shadow: 8rpx 8rpx 40rpx rgba(184, 209, 249, 0.64);
+  border-radius: 18rpx;
+  position: relative;
+}
+ .gray{
+  filter: grayscale(100%)
+}
+
+.kuang .kuang-l {
+  width: 200rpx;
+  height: 220rpx;
+}
+
+.kuang-m {
+  width: 380rpx;
+  font: 400 34rpx "微软雅黑";
+  color: #797979;
+}
+
+.kuang-m-top text {
+  margin-bottom: 50rpx;
+  position: absolute;
+  left: 200rpx;
+  top: 35rpx;
+}
+
+.kuang-m-bottom {
+  position: absolute;
+  left: 200rpx;
+  top: 120rpx;
+  color: #31c927;
+}
+
+.kuang-m-bottom .jine {
+  margin-left: 5rpx;
+  font-size: 50rpx;
+}
+
+.kuang-m-bottom .man {
+  margin-left: 10rpx;
+  font: 400 24rpx "微软雅黑";
+}
+
+.kuang image {
+  width: 170rpx;
+  height: 170rpx;
+  margin: 25rpx 10rpx;
+}
+
+.kuang-r {
+  width: 140rpx;
+  height: 170rpx;
+  position: absolute;
+  right: 25rpx;
+  top: 35rpx;
+}
+
+.kuang-r image {
+  width: 120rpx;
+  height: 120rpx;
+}

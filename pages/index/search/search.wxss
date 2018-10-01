@@ -1,0 +1,50 @@
+page {
+  margin: 0;
+  padding: 0;
+}
+
+.top image {
+  width: 70rpx;
+  height: 70rpx;
+  float: left;
+  margin-left: 5rpx;
+}
+
+.top .search {
+  border-radius: 50rpx;
+  background: #f1f1f1;
+  height: 50rpx;
+  width: 95%;
+  margin: 12rpx auto;
+}
+
+.phcolor {
+  color: #e4e4e4;
+  font: 300 28rpx/28rpx "微软雅黑";
+}
+
+.top .search image {
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+}
+
+.top input {
+  float: left;
+  height: 100%;
+  width: 90%;
+  font: 300 28rpx/28rpx "微软雅黑";
+}
+
+.item-rank {
+  color: #31c971;
+  float: right;
+}
+
+.items {
+  height: 30rpx;
+  color: #454545;
+  font: 300 24rpx/30rpx "微软雅黑";
+  padding: 40rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}

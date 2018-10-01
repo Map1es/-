@@ -1,0 +1,26 @@
+<view class="container">
+  <view class='bing'>
+    <view class='today'>
+      <text class='today-title'>今日营养</text>
+    </view>
+    <canvas canvas-id="pieCanvas" class="canvas" style="width:300px; height:230px" bindtouchstart="touchHandler"></canvas>
+  </view>
+</view>
+<view class="container">
+  <view class='bing'>
+    <view class='today'>
+      <text class='today-title'>一周营养</text>
+    </view>
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" style="width:340px; height:200px" bindtouchstart="touchHandler1"></canvas>
+  </view>
+</view>
+<view class="container">
+  <view class='bing'>
+    <view class='today'>
+      <text  class='today-title'>健康小贴士</text>
+      <view class='tips'>
+      <text class='text'>您今日的饮食的脂肪和蛋白质占比较高，不适合当前的身体状况，可能导致体重持续上升，建议选择平衡膳食，搭配多样化，至少一种绿叶蔬菜，绿叶蔬菜中含的膳食纤维比较高，有利于减脂，至少含一种豆类，豆类中含有优质蛋白，人体必需脂肪酸。</text>
+      </view>
+    </view>
+  </view>
+</view>

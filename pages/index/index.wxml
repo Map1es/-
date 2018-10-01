@@ -1,0 +1,51 @@
+<!-- 搜索框 -->
+<view class='top'>
+  <view class='search'>
+    <image src='../../images/index/search.png'></image>
+    <input placeholder='搜索商品' placeholder-class="phcolor" bindtap='tapSearch'></input>
+  </view>
+</view>
+<!-- 轮播图 -->
+<swiper indicator-dots="true" indicator-color="white" autoplay="true" circular="true">
+  <swiper-item wx:for="{{slider}}" wx:key="{{index}}">
+    <image src="{{item.picUrl}}"></image>
+  </swiper-item>
+</swiper>
+<view class='ypqz'>
+  <image src='../../images/index/ypqz.jpg'></image>
+</view>
+<!-- 头条 -->
+<view class='news'>
+  <image src='../../images/index/news.png'></image>
+  <swiper vertical="true" autoplay="true" circular="true">
+    <swiper-item wx:for="{{5}}" wx:key="{{index}}">
+      <text class='tehui'>[ 特惠 ]</text>
+      <text>猪肉今日一元一斤</text>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 为你推荐 -->
+<view class='wntj'>
+  <image src='../../images/index/wntj.jpg'></image>
+  <swiper previous-margin="60px" next-margin="60px" autoplay="true" circular="true">
+    <swiper-item wx:for="{{jx}}" wx:key="{{index}}"  bindtap='tapItem' data-item='{{item}}'>
+      <image src='{{item.img}}'></image>
+      <text class='item-name'>{{item.name}}</text>
+      <text class='item-money'>￥{{item.price}}</text>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 精选推荐 -->
+<view class='jxtj'>
+  <image src='../../images/index/jx_title.jpg'></image>
+  <view class='jx-content'>
+    <view class='jx-item' wx:for="{{rm}}" wx:key="{{index}}" bindtap='tapItem' data-item='{{item}}'>
+      <image src='{{item.img}}' mode='scaleToFill'></image>
+      <view class='item-more'>
+        <text class='item-name'>{{item.name}}</text>
+        <text class='item-des'>{{item.description}}</text>
+        <text class='item-rank' wx:for="{{item.score}}" wx:key="{{index}}">★</text>
+      </view>
+    </view>
+  </view>
+</view>
